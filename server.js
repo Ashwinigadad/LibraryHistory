@@ -5,7 +5,7 @@ app.use(express.json());
 const port=8090;
 
 
-app.use("/api/entryexit",require("./routes/routes"));
+app.use("/api/entryexit",route);
 const mongoos=require("mongoose");
 mongoos.connect("mongodb://localhost:27017/Register",{
   useNewUrlParser: true,

@@ -1,10 +1,17 @@
 const mongoose=require("mongoose")
 const librarySchema=new mongoose.Schema({
-    name:{
+    email:{
         type:String,
         required:true
     },
-        usn:String,
+    
+    password:{
+        type:String,
+        required:true
+    },
+ 
+
+        
         history:[
             {
                 loginTime:Date,
